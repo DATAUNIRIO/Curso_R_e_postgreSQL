@@ -1,0 +1,116 @@
+---
+title: "Introdução ao SQL"
+author: 
+- Steven Dutt-Ross
+
+output:
+  revealjs::revealjs_presentation:
+    fig_height: 4
+    center: true
+    theme: night
+    highlight: pygments
+    background_transition: concave
+    transition: default
+    self_contained: false
+    css: styles.css
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Roteiro do Minicurso
+
+## Teoria {data-background=#23afe5} 
+- O que é SQL?
+- Qual a vantagem de usar o SQL?
+
+## Prática {data-background=#168bb8}
+- Como baixar e instalar o SQL.
+- Como colocar uma base de dados de sensores de cidades inteligentes (formato CSV) no PostgreSQL.
+- Introdução a linguagem SQL.
+- Como manipular uma base de dados no PostgreSQL.
+- Integração do SQL com o R.
+
+## Próximos Passos: Onde queremos chegar {data-background=#0c7198}
+- Alimentar a base de dados em tempo real.
+- Hospedar em um servidor a acessar remotamente.
+
+# Alinhando as espectativas
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+### Tenha sempre em mente 
+### Não vou conseguir responder todas as perguntas.
+
+
+# O que é SQL? {data-background=#0c7198}
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+### SQL (*Structured Query Language*) é a linguagem padrão universal para manipular bancos de dados relacionais através dos Sistema de Gerenciamento de Banco de Dados Relacionais (SGBD).
+
+# O que é SQL? (continuação) {data-background=#0c7198}
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+### A "Linguagem Estruturada de Consultas" (SQL, traduzida para o português) é utilizada para interagir com o Sistema SGBD e executar tarefas como inserir e alterar registros, criar objetos no banco de dados, gerenciar usuário, consultar informações, etc.
+- [fonte](https://dicasdeprogramacao.com.br/o-que-e-sql/)
+
+
+#  {data-background-image="database.jpg" data-background-size="1100px" data-background-position=center} 
+
+# Qual a vantagem de usar o SQL?  {data-background=#0c7198}
+
+## Qual a vantagem de usar o SQL? <br> <br>  {data-background=#0c7198}
+
+<span class="emphasized">MEMÓRIA RAM</span> 
+
+# SQL e NOSQL
+
+##  {data-background-image="SQL_vs_NoSQL.jpg" data-background-size="1100px" data-background-position=center} 
+
+# {data-background-image="tela_inicial.png" data-background-size="1100px" data-background-position=center} 
+<!--
+# {data-background-iframe="https://www.postgresql.org/"}
+-->
+
+## Instalação
+### Além do R e do RStudio, precisamos instalar o PostgreSQL, que encontramos [aqui](https://www.postgresql.org/download/windows/). Ao instalar, somos solicitados a fornecer uma senha, lembre-se dela, pois precisamos dela mais tarde. 
+### Agora já podemos acessar o banco de dados. Podemos iniciar a interface (pgAdmin III) que foi instalada automaticamente com o PostgreSQL.
+
+# Passo a passo no PostgreSQL  
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+### <br>
+- Baixar e instalar o SQL.
+- Abrir o pgAdmin.
+- Conectar o servidor.
+- Clicar em SQL (para rodar o script de SQL).
+- Escrever um script para gerar o banco de dados.
+- Executar uma query.
+- Clicar na tabela criada com botão esquerdo do mouse e pedir para importar.
+- Clicar na tabela criada e pedir para ver as 100 primeiras observações.
+
+##  {data-background-image="estrutura.png" data-background-size="1100px" data-background-position=top} 
+
+
+
