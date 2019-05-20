@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introdução ao PostgreSQL</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rafael Stavale   Steven Ross" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao PostgreSQL
+### Rafael Stavale <br> Steven Ross
+
+---
+
+
+
+
+
+
+
+# Roteiro do Minicurso
+
+## Teoria 
+- O que é SQL?
+- Qual a vantagem de usar o SQL?
+
+## Prática
+- Como baixar e instalar o SQL.
+- Como colocar uma base de dados (formato CSV) no PostgreSQL.
+- Introdução a linguagem SQL.
+- Como manipular uma base de dados no PostgreSQL.
+- Integração do postgreSQL com o R.
+- Integração do postgreSQL com o shiny.
+- Integração do postgreSQL com o Python.
+
+---
+
+# O que é SQL? 
+### SQL (*Structured Query Language*) é a linguagem padrão universal para manipular bancos de dados relacionais através dos Sistema de Gerenciamento de Banco de Dados Relacionais (SGBD).
+&lt;br&gt;
+### A "Linguagem Estruturada de Consultas" (SQL, traduzida para o português) é utilizada para interagir com o Sistema SGBD e executar tarefas como inserir e alterar registros, criar objetos no banco de dados, gerenciar usuário, consultar informações, etc.
+- [fonte](https://dicasdeprogramacao.com.br/o-que-e-sql/)
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/database.jpg)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+
+---
+
+# Qual a vantagem de usar o SQL?
+&lt;br&gt;
+&lt;br&gt;
+# SQL e NoSQL
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/SQL_vs_NoSQL.jpg)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/tela_inicial.png)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+&lt;!--
+# {data-background-iframe="https://www.postgresql.org/"}
+--&gt;
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/estrutura.png)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

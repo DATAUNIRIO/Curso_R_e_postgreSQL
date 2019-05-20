@@ -1,0 +1,87 @@
+---
+title: "Introdução ao PostgreSQL"
+author: "Rafael Stavale <br> Steven Ross"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+solarized_dark(
+  code_font_family = "Fira Code",
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css"
+)
+```
+
+
+# Roteiro do Minicurso
+
+## Teoria 
+- O que é SQL?
+- Qual a vantagem de usar o SQL?
+
+## Prática
+- Como baixar e instalar o SQL.
+- Como colocar uma base de dados (formato CSV) no PostgreSQL.
+- Introdução a linguagem SQL.
+- Como manipular uma base de dados no PostgreSQL.
+- Integração do postgreSQL com o R.
+- Integração do postgreSQL com o shiny.
+- Integração do postgreSQL com o Python.
+
+---
+
+# O que é SQL? 
+### SQL (*Structured Query Language*) é a linguagem padrão universal para manipular bancos de dados relacionais através dos Sistema de Gerenciamento de Banco de Dados Relacionais (SGBD).
+<br>
+### A "Linguagem Estruturada de Consultas" (SQL, traduzida para o português) é utilizada para interagir com o Sistema SGBD e executar tarefas como inserir e alterar registros, criar objetos no banco de dados, gerenciar usuário, consultar informações, etc.
+- [fonte](https://dicasdeprogramacao.com.br/o-que-e-sql/)
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/database.jpg)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+
+---
+
+# Qual a vantagem de usar o SQL?
+<br>
+<br>
+# SQL e NoSQL
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/SQL_vs_NoSQL.jpg)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/tela_inicial.png)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+<!--
+# {data-background-iframe="https://www.postgresql.org/"}
+-->
+
+---
+
+background-image: url(https://raw.githubusercontent.com/DATAUNIRIO/Curso_R_e_postgreSQL/master/apresentacao/estrutura.png)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+
